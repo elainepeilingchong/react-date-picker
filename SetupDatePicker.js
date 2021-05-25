@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Image, Text } from 'react-native';
 import { ScaledSheet, verticalScale } from 'react-native-size-matters';
-import DatePicker from './FromScratch';
+import DatePicker from './DatePicker';
 
 class SetupDatePicker extends Component {
   render() {

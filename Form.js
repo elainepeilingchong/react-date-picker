@@ -4,7 +4,6 @@ import { Field, reduxForm } from 'redux-form';
 import SetupDatePicker from './SetupDatePicker';
 export const required = val => (val ? undefined : "WRONG");
 import { connect } from 'react-redux';
-import DatePicker from './FromScratch';
 import Moment from 'moment';
 
 function ReactForm() {
