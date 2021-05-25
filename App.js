@@ -1,21 +1,31 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet,Text, View } from 'react-native';
+import ReactForm from './Form';
 
+import store from "./store";
+import { Provider } from "react-redux";
 export default function App() {
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Provider store={store}>
+
+      <View style={styles.container}>
+        <Text>hello</Text>
+        <ReactForm />
+        {/* <DatePickerV2/> */}
+      </View>
+    </Provider>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#777',
+    color: "#fff",
     alignItems: 'center',
     justifyContent: 'center',
-  },
+  }
 });
+
+
