@@ -8,10 +8,6 @@ import Moment from 'moment';
 
 function ReactForm() {
 
-    const renderInput = ({ input: { onChange, ...restInput } }) => {
-        return <TextInput style={styles.input} onChangeText={onChange} {...restInput} />
-    }
-
     return (
         <View style={styles.container}>
             <Text>Form 1</Text>
